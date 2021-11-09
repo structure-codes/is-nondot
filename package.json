@@ -1,10 +1,11 @@
 {
-  "name": "non-dotted-dotfiles",
+  "name": "@structure-codes/is-nondot",
   "version": "1.0.0",
   "description": "A library to test if a filename is considered a to be a standard non-dotted dotfile",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
+    "dev": "tsc -w",
     "test": "jest --verbose"
   },
   "repository": {
