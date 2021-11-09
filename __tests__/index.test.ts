@@ -1,18 +1,18 @@
-import nondot from "../src/index";
+import isNondot from "../src/index";
 import fs from "fs";
 
 test("File in dictionary should work", () => {
-  expect(nondot("LICENSE")).toBe(true);
+  expect(isNondot("LICENSE")).toBe(true);
 });
 
 test("File not in dictionary should fail", () => {
-  expect(nondot("MINECRAFT")).toBe(false);
+  expect(isNondot("MINECRAFT")).toBe(false);
 });
 
 test("Not passing a string should throw error", () => {
   expect(() => {
     // @ts-ignore
-    nondot(42069);
+    isNondot(42069);
   }).toThrow("fileName must be a string");
 });
 
@@ -23,7 +23,7 @@ describe("All words return true", () => {
 
   wordList.forEach((word) => {
     test(`${word} should be true`, () => {
-      expect(nondot(word)).toBe(true);
+      expect(isNondot(word)).toBe(true);
     });
   });
 });

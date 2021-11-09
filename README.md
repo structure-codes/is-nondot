@@ -10,18 +10,18 @@ npm install nondot
 
 Typescript
 ```typescript
-import nondot from "nondot"
+import isNondot from "nondot"
 
-console.log(nondot("minecraft")); // => false
-console.log(nondot("Makefile")); // => true
+console.log(isNondot("minecraft")); // => false
+console.log(isNondot("Makefile")); // => true
 ```
 
 JavaScript
 ```javascript
-const nondot = require("nondot");
+const isNondot = require("nondot");
 
-console.log(nondot("minecraft")); // => false
-console.log(nondot("Makefile")); // => true
+console.log(isNondot("minecraft")); // => false
+console.log(isNondot("Makefile")); // => true
 ```
 
 ### Supported files

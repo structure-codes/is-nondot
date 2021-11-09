@@ -8,7 +8,7 @@ const wordList = fs
 // convert the array into a map
 const fileData = wordList.reduce((acc, curr) => ((acc[curr] = true), acc), {});
 
-const nondot = (fileName: string) => {
+const isNondot = (fileName: string) => {
   if (typeof fileName !== "string") {
     throw new Error("fileName must be a string");
   }
@@ -16,4 +16,4 @@ const nondot = (fileName: string) => {
   return fileData[fileName.toLowerCase()] !== undefined;
 };
 
-export default nondot;
+export default isNondot;
