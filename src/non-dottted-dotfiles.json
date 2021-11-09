@@ -1,0 +1,8 @@
+{
+  "makefile": {
+    "description": "Used to run makefile scripts"
+  },
+  "license": {
+    "description": "Used to hold License infomration"
+  }
+}
