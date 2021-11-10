@@ -2,10 +2,15 @@
   "name": "@structure-codes/is-nondot",
   "version": "1.0.0",
   "description": "A library to test if a filename is considered a to be a standard non-dotted dotfile",
-  "main": "dist/index.js",
+  "main": "dist/cjs/nondot.js",
+  "module": "dist/esm/nondot.js",
+  "exports": {
+    "require": "./dist/cjs/nondot.js",
+    "import": "./dist/esm/nondot.js"
+  },
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc -w",
+    "build": "rollup -c rollup.config.js",
+    "dev": "rollup -w -c rollup.config.js",
     "test": "jest --verbose"
   },
   "repository": {
@@ -24,6 +29,11 @@
     "@typescript-eslint/parser": "^5.2.0",
     "eslint": "^8.1.0",
     "jest": "^27.3.1",
+    "rollup": "^2.59.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.30.0",
     "ts-jest": "^27.0.7",
     "ts-node": "^10.4.0",
     "typescript": "^4.4.4"
