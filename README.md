@@ -10,7 +10,7 @@ npm install nondot
 
 Typescript
 ```typescript
-import isNondot from "nondot"
+import isNondot from "@structure-codes/is-nondot"
 
 console.log(isNondot("minecraft")); // => false
 console.log(isNondot("Makefile")); // => true
@@ -18,7 +18,7 @@ console.log(isNondot("Makefile")); // => true
 
 JavaScript
 ```javascript
-const isNondot = require("nondot");
+const isNondot = require("@structure-codes/is-nondot");
 
 console.log(isNondot("minecraft")); // => false
 console.log(isNondot("Makefile")); // => true
