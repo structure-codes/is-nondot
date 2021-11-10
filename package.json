@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/structure-codes/non-dotted-dotfiles.git"
+    "url": "git+https://github.com/structure-codes/is-nondot.git"
   },
   "author": "structure-codes",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/structure-codes/non-dotted-dotfiles/issues"
+    "url": "https://github.com/structure-codes/is-nondot/issues"
   },
-  "homepage": "https://github.com/structure-codes/non-dotted-dotfiles#readme",
+  "homepage": "https://github.com/structure-codes/is-nondot#readme",
   "devDependencies": {
     "@types/jest": "^27.0.2",
     "@typescript-eslint/eslint-plugin": "^5.2.0",
